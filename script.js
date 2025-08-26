@@ -58,6 +58,10 @@ function runcmd(text) {
     var term = args.join(" ");
     openNewTab("https://google.com/search?q=" + encodeURIComponent(term));
   }
+  if(verb == "youtube" || verb == "yt") {
+    var term = args.join(" ");
+    openNewTab("https://www.youtube.com/results?search_query=" + encodeURIComponent(term));
+  }
 }
 
 input.addEventListener("keydown", function (e) {
